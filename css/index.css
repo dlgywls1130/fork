@@ -15,7 +15,7 @@
   font-family: 'Apple SD Gothic Neo';
   src: url('/font/AppleSDGothicNeoB.woff') format('woff'),
   url('/font/AppleSDGothicNeoB.ttf') format('truetype');
-  font-weight: 600;
+  font-weight:  normal;
   font-style: normal;
 }
 
@@ -125,7 +125,7 @@ align-items: center; justify-content: center; background:#fff;    border-radius:
   line-height: 1.63;
   color: #000;
   text-align: center;
-
+  font-weight: 500;
 }
 /* slide box */
 
@@ -178,7 +178,7 @@ justify-content: flex-end;
  line-height: 1.2;
  letter-spacing: normal;
  color: #000;
-
+font-weight: 400;
 }
 .section .title .icon2::before{
   background-image:url(../img/main/ic2.png);
@@ -742,6 +742,7 @@ height: auto;
 
 #section1 li a p{
     font-size: 12px;
+    font-weight: 500;
 }
 
 /* section2 */
