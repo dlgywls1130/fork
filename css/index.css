@@ -1,11 +1,12 @@
 @import url('https://unpkg.com/swiper/swiper-bundle.min.css');
 @font-face {
     font-family: 'SpoqaHanSansNeo-Regular';
-    src: url    url('/font/SpoqaHanSansNeo-Regular.eot'),
+    src: url('/font/SpoqaHanSansNeo-Regular.eot'),
     url('/font/SpoqaHanSansNeo-Regular.woff2') format('woff2'),
+    url('/font/SpoqaHanSansNeo-Regular.woff') format('woff'),
     url('/font/SpoqaHanSansNeo-Regular.otf') format('otf'),
-    url('/font/SpoqaHanSansNeo-Regular.ttf') format('truetype'),
-    url('/font/SpoqaHanSansNeo-Regular.woff') format('woff');
+    url('/font/SpoqaHanSansNeo-Regular.ttf') format('truetype');
+
     font-weight: normal;
     font-style: normal;
 }
