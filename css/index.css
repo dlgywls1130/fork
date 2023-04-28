@@ -13,8 +13,8 @@
 
 @font-face {
   font-family: 'Apple SD Gothic Neo';
-  src: url('/font/AppleSDGothicNeoSB.woff') format('woff'),
-  url('/font/AppleSDGothicNeoSB.ttf') format('truetype');
+  src: url('/font/AppleSDGothicNeoB.woff') format('woff'),
+  url('/font/AppleSDGothicNeoB.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
