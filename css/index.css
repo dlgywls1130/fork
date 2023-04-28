@@ -18,6 +18,11 @@ body {
     font-family: 'SpoqaHanSansNeo-Regular';
         box-sizing: border-box;
 }
+
+table, input, textarea, select, button{
+  font-family: 'SpoqaHanSansNeo-Regular';
+}
+
 .container{
   width:100%;
   max-width:983px;
