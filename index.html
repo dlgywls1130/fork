@@ -113,13 +113,13 @@
         </ul>
       </div>
     </div>
-    <video loop="loop" muted="muted" autoplay="autoplay" playsinline>
+    <video id="vid" loop muted autoplay playsinline>
 
-    <source src="video/hp_main.mp4" type="video/ogg" >
+      <source src="video/hp_main.mp4" type="video/ogg" >
 
-    <source src="video/ex1.ogv" type="video/ogg; codecs='theora, vorbis'">
+      <source src="video/ex1.ogv" type="video/ogg; codecs='theora, vorbis'">
 
-</video>
+    </video>
   </section>
   <section class="section" id="section2">
     <div class="container scroll-spy">
@@ -381,6 +381,7 @@
 
 
 <script type="text/javascript">
+   document.getElementById('vid').play();
   // $(document).ready(function () {
   //   var mySwiper = new Swiper(".swiper", {
   //   slidesPerView: 1,
