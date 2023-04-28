@@ -102,6 +102,7 @@ align-items: center; justify-content: center; background:#fff;    border-radius:
   color: #000;
   line-height: 0.79;
   font-size: 19px;
+  font-weight: 500;
 }
 
 /* google-play-icon.png */
