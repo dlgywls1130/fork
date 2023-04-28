@@ -404,6 +404,7 @@ width: 100%;
   margin-top:15px;
   text-align: center;
   color: #000;
+  font-weight: 500;
 }
 .button{
   width: 147px;
@@ -443,7 +444,7 @@ width: 100%;
   color: #111;
   margin-right:30px;
 }
-#section6 .rediobox label{margin-right:20px;font-size: 14px;color: #000;vertical-align: text-top;}
+#section6 .rediobox label{margin-right:20px;font-size: 14px;color: #000;vertical-align: text-top; font-weight: 500;}
 #section6 .rediobox input{margin-right:8px;}
 #section6 ul{ }
 #section6 ul li{width:calc(50% - 15px); float:left; margin-right:30px; margin-bottom:30px;text-align: left;}
