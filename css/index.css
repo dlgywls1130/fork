@@ -11,17 +11,25 @@
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'Apple SD Gothic Neo';
+  src: url('/font/AppleSDGothicNeoR.woff') format('woff'),
+  url('/font/AppleSDGothicNeoR.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
     font-size: 18px;
     margin: 0;
     padding: 0;
-    font-family: 'SpoqaHanSansNeo-Regular';
+    font-family: 'SpoqaHanSansNeo-Regular', 'Apple SD Gothic Neo', sans-serif;
         box-sizing: border-box;
 }
 
 table, input, textarea, select, button{
-  font-family: 'SpoqaHanSansNeo-Regular';
+  font-family: 'SpoqaHanSansNeo-Regular', 'Apple SD Gothic Neo', sans-serif;
 }
 
 .container{
