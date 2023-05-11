@@ -1,4 +1,5 @@
 @import url('https://unpkg.com/swiper/swiper-bundle.min.css');
+@import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
 @font-face {
     font-family: 'SpoqaHanSansNeo-Regular';
     src: url('/font/SpoqaHanSansNeo-Regular.eot'),
@@ -19,18 +20,20 @@
   font-style: normal;
 }
 
+* { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
+
 html,
 body {
     font-size: 18px;
     margin: 0;
     padding: 0;
-    font-family: 'SpoqaHanSansNeo-Regular', 'Apple SD Gothic Neo', sans-serif;
+    /* font-family: 'SpoqaHanSansNeo-Regular', 'Apple SD Gothic Neo', sans-serif; */
         box-sizing: border-box;
 }
 
-table, input, textarea, select, button{
+/* table, input, textarea, select, button{
   font-family: 'SpoqaHanSansNeo-Regular', 'Apple SD Gothic Neo', sans-serif;
-}
+} */
 
 .container{
   width:100%;
@@ -42,9 +45,10 @@ table, input, textarea, select, button{
 .mobile_block{display:none;}
 .mobile_inblock{display:none;}
 /* header */
-header{padding:23px 0;height:75px;box-sizing: border-box;}
-header > div{position: relative; }
-header .logo{position: absolute;   width: 57.6px; height: 28.1px;}
+header{width:100%; height:75px;box-sizing: border-box; position: relative;}
+header .header_wrapp{position: fixed; top: 0; left: 50%; transform: translate(-50%); width:100%; height:75px; background-color: #fff; z-index: 11; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);}
+.header_navbar{display: flex; justify-content: space-between; width: 100%; max-width: 1024px; margin: 0 auto; padding: 24px 0; }
+header .logo{width: 55px;}
 header .logo img{ width: 100%; height: 100%;}
 header .pc_block{}
 header .pc_header{}
@@ -61,7 +65,7 @@ video{width:100%;}
 /* visual */
 #section1{    font-size: 0;}
 #section1 .container{position: relative;}
-#section1 .text{position: absolute; top:393px; }
+#section1 .text{position: absolute; top:393px; z-index: 9; }
 #section1 h1{
   font-size: 73px;
   font-weight: bold;
@@ -80,8 +84,9 @@ align-items: center; justify-content: center; background:#fff;    border-radius:
 #section1 li a{
   display: flex;
   align-items: center;
-  justify-content: center;
-
+    justify-content: center;
+  width: 100%;
+  height: 100%;
    letter-spacing: normal;
    text-align: center;
 
@@ -695,7 +700,7 @@ header .gnb{
   background: #fff;
   z-index: 12;
 }
-header .gnb ul{}
+header .gnb ul{background-color: #fff; height: 100vh;}
 header .gnb ul li{
   float:none;
   margin-left: 0;
@@ -795,7 +800,7 @@ height: auto;
 
 /* swiper */
 .section.pd2 {
-    padding: 150px 0;
+    padding: 130px 0;
 }
 #section3{height:97vw;}
 #section3 .container .container{
@@ -828,6 +833,11 @@ transform: translateX(-50%);
 width: 100%;height: 58vw;
 }
 
+
+#section3{
+  padding: 130px 0px;
+}
+
 .slide-box .slide-main-img img{width:100%;}
 .slide-box .swiper-container-wrapper {
   margin-top: 45px;
@@ -837,6 +847,7 @@ width: 100%;height: 58vw;
       width: 100% !important;
       display: inline-block;
       top: 0px !important;
+      margin-left: 0;
 }
 .slide-wrapper {
   float: none;
@@ -879,6 +890,7 @@ width: 100%;height: 58vw;
 /* section4 */
 #section4 {
     height: auto;
+    padding: 200px 0;
 }
 
 #section4 .img {
@@ -966,6 +978,12 @@ width: 100%;height: 58vw;
 }
 
 /* footer */
+
+footer .container{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 footer .address p:first-child {
     margin-bottom: 5px;
 }
@@ -994,11 +1012,13 @@ footer ul li > p {
     margin-bottom: 20px;
 }
 footer .qr {
-    position: absolute;
-    bottom: 60px;
-    right: 20px;
-    width: 70px;
-    height: 70px;
+  position: relative;
+  bottom: 60px;
+  width: 70px;
+  height: 70px;
+  display: block;
+  bottom: 0;
+  margin-top: 1.2rem;
 }
 footer .qr  img{width:100%;}
 }
@@ -1030,6 +1050,7 @@ footer .qr  img{width:100%;}
     height: 30px;
     background: #fff;
     padding: 0;
+    border-radius: 38px;
 }
 #section1 li:first-child{
   margin-bottom: 0.625rem;
@@ -1037,12 +1058,7 @@ footer .qr  img{width:100%;}
 
 
 
-  #section1 li a.google {
-      background: #fff;
-  }
-  #section1 li a.app {
-      background:  #fff;
-  }
+
   #section1 li a {
       font-size: 12px;
   }
@@ -1169,9 +1185,6 @@ footer .address p {
 footer .copy {
     font-size: 12px;
 }
-footer .qr {
-    bottom: 85px;
-}
 
 footer .logo{
   justify-content: center;
@@ -1179,9 +1192,8 @@ footer .logo{
 }
 
 @media (max-width: 360px) {
-  /* .slide-wrapper{
-  height: 82vw;
-} */
+
+
 
 
 .slide-wrapper {
@@ -1198,12 +1210,16 @@ footer .logo{
   margin: 15px 0;
 }
 
-.section.pd2 {
-  padding: 175px 0;
-}
+
 }
 @media (max-width: 300px) {
-  /* .slide-wrapper{
-  height: 89vw;
-} */
+
+  #section1 h1{
+    margin-bottom: 16px;
+  }
+
+
+  #section4{
+    padding: 200px 0 175px;
+  }
 }
