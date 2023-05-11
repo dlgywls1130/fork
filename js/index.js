@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
  
   // 모바일메뉴
@@ -16,4 +18,7 @@ $(document).ready(function(){
 
 })
 
-
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  next();
+});
